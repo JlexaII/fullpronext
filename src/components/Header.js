@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
     <>
       <div className="info-dostavka">
         <a href="#" className="close">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="https://www.w3.org/2000/svg">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_199_69)">
               <path
                 fillRule="evenodd"
@@ -38,13 +39,13 @@ export default function Header() {
             </div>
             <div className="logo">
               <Link href="/">
-                <Image src="/img/logo.svg" alt="CBD Logo" width={100} height={50} unoptimized />
+                <Image src="/img/logo.svg" alt="CBD Логотип" width={100} height={50} unoptimized />
                 <span>Продукт для жизни</span>
               </Link>
             </div>
             <div className="right">
               <a href="#" className="popup-open">
-                <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="https://www.w3.org/2000/svg">
+                <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -56,7 +57,7 @@ export default function Header() {
               </a>
               <span></span>
               <a href="#">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="https://www.w3.org/2000/svg">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M1.73672 2.29265C1.85121 1.96702 2.208 1.79585 2.53364 1.91034L2.78481 1.99864C3.29858 2.17925 3.73495 2.33265 4.07834 2.50115C4.44554 2.68131 4.76041 2.90326 4.99723 3.24981C5.23221 3.59368 5.32923 3.97095 5.374 4.3846C5.39404 4.56976 5.40462 4.77471 5.41019 4.99999H14.2753C15.6795 4.99999 16.9435 4.99999 17.3134 5.48089C17.6834 5.9618 17.5388 6.6864 17.2495 8.13561L16.833 10.1562C16.5704 11.4303 16.4391 12.0673 15.9793 12.442C15.5196 12.8167 14.8692 12.8167 13.5683 12.8167H9.14925C6.82515 12.8167 5.66311 12.8167 4.94111 12.0552C4.2191 11.2936 4.16641 10.4847 4.16641 8.03332V5.86525C4.16641 5.24863 4.16556 4.83595 4.13126 4.51911C4.09849 4.21632 4.0404 4.06514 3.96519 3.95506C3.8918 3.84768 3.78041 3.74732 3.52772 3.62334C3.25869 3.49133 2.89306 3.3617 2.33672 3.1661L2.11904 3.08957C1.7934 2.97509 1.62224 2.6183 1.73672 2.29265Z"
                     fill="white"
