@@ -1,5 +1,9 @@
-import './globals.css';
 import { ReactNode } from 'react';
+
+// Подключаем CSS-файлы
+import '../public/css/swiper-bundle.min.css';
+import '../public/css/select2.min.css';
+import '../public/css/style.css';
 
 export const metadata = {
   title: 'CBD',
@@ -13,9 +17,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="/css/select2.min.css" />
-        <link rel="stylesheet" href="/css/style.css" />
       </head>
       <body className="home">
         {children}

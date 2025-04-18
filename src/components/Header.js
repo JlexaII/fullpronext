@@ -38,7 +38,7 @@ export default function Header() {
             </div>
             <div className="logo">
               <Link href="/">
-                <img src="/img/logo.svg" alt="CBD" />
+                <Image src="/img/logo.svg" alt="CBD Logo" width={100} height={50} unoptimized />
                 <span>Продукт для жизни</span>
               </Link>
             </div>

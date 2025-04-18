@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Main() {
   return (
     <main>
@@ -58,7 +60,7 @@ export default function Main() {
             ].map((item, index) => (
               <a href="#" className="item" key={index}>
                 <span className="img">
-                  <img src={`/img/${item.img}`} alt="" />
+                  <Image src={`/img/${item.img}`} alt={item.name} width={150} height={150} unoptimized />
                 </span>
                 <span className="name">{item.name}</span>
               </a>
@@ -81,7 +83,7 @@ export default function Main() {
             {['img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg'].map((img, index) => (
               <a href="#" className="item" key={index}>
                 <span className="img">
-                  <img src={`/img/${img}`} alt="" />
+                  <Image src={`/img/${img}`} alt="Изображение статьи" width={200} height={150} unoptimized />
                 </span>
                 <span className="box">
                   <span className="name">Поиск по информационной базе статей и каталогу продукции</span>
@@ -105,7 +107,7 @@ export default function Main() {
             {['img11.jpg', 'img12.jpg', 'img13.jpg', 'img14.jpg'].map((img, index) => (
               <div className="item" key={index}>
                 <a href="#" className="img">
-                  <img src={`/img/${img}`} alt="" />
+                  <Image src={`/img/${img}`} alt="Изображение новости" width={200} height={150} unoptimized />
                 </a>
                 <a href="#" className="name">Полезные свойства СBD масло</a>
                 <div className="text">совмещая передовые технологии производства</div>
@@ -153,7 +155,7 @@ export default function Main() {
                   <div className="item">
                     <div className="img">
                       <a href="#">
-                        <img src={`/img/${img}`} alt="" />
+                        <Image src={`/img/${img}`} alt="Изображение продукта" width={200} height={200} unoptimized />
                       </a>
                       <a href="#" className="like">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -181,7 +183,7 @@ export default function Main() {
               ))}
             </div>
             <div className="swiper-button-prev">
-              <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="https://www.w3.org/2000/svg">
+              <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_199_449)">
                   <circle cx="30.5" cy="26.5" r="24.5" transform="rotate(-180 30.5 26.5)" fill="white" />
                 </g>
@@ -201,7 +203,7 @@ export default function Main() {
               </svg>
             </div>
             <div className="swiper-button-next">
-              <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="https://www.w3.org/2000/svg">
+              <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_199_443)">
                   <circle cx="30.5" cy="26.5" r="24.5" fill="white" />
                 </g>
@@ -251,12 +253,12 @@ export default function Main() {
             {[...Array(3)].map((_, index) => (
               <div className="item" key={index}>
                 <div className="left">
-                  <img src="/img/img22.jpg" alt="" />
+                  <Image src="/img/img22.jpg" alt="Изображение отзыва" width={100} height={100} unoptimized />
                 </div>
                 <div className="right">
                   <div className="star">
                     {[...Array(5)].map((_, starIndex) => (
-                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="https://www.w3.org/2000/svg" key={starIndex}>
+                      <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg" key={starIndex}>
                         <path
                           d="M9.5 0L11.6329 6.56434H18.535L12.9511 10.6213L15.084 17.1857L9.5 13.1287L3.91604 17.1857L6.04892 10.6213L0.464963 6.56434H7.36712L9.5 0Z"
                           fill={index === 0 && starIndex < 4 ? '#80A9AA' : '#666666'}
@@ -289,7 +291,7 @@ export default function Main() {
       <div className="popup-fade">
         <div className="popup">
           <a href="#" className="popup-close">
-            <svg xmlns="https://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
               <g clipPath="url(#clip0_255_1873)">
                 <path
                   fillRule="evenodd"
@@ -326,7 +328,7 @@ export default function Main() {
       <div className="popup-fade-reg">
         <div className="popup">
           <a href="#" className="popup-close">
-            <svg xmlns="https://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
               <g clipPath="url(#clip0_255_1873)">
                 <path
                   fillRule="evenodd"
@@ -363,7 +365,7 @@ export default function Main() {
         <a href="#" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
             <path
-              d="M25.8312 4.64625L3.66875 13.1925C2.15625 13.8 2.165 14.6438 3.39125 15.02L9.08125 16.795L22.2462 8.48875C22.8687 8.11 23.4375 8.31375 22.97 8.72875L12.3037 18.355H12.3012L12.3037 18.3563L11.9112 24.2213C12.4862 24.2213 12.74 23.9575 13.0625 23.6463L15.8262 20.9588L21.575 25.205C22.635 25.7888 23.3962 25.4888 23.66 24.2238L27.4337 6.43875C27.82 4.89 26.8425 4.18875 25.8312 4.64625Z"
+              d="M25.8312 4.64625L3.66875 13.1925C2.15625 13.8 2.165 14.6438 3.39125 15.02L9.16625 16.41L22.2037 8.17625C22.8312 7.7925 23.3912 7.995 22.9362 8.43L12.6062 18.15L12.6112 18.1537L12.1887 24.5287C12.7912 24.5287 13.0512 24.2675 13.3912 23.9325L16.3875 20.9962L22.2225 25.1287C23.2975 25.73 24.2225 25.42 24.5287 24.1237L27.6662 6.65625C27.8725 5.595 27.1537 4.9875 25.8312 4.64625Z"
               fill="white"
             />
           </svg>
